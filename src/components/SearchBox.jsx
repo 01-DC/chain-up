@@ -5,14 +5,14 @@ import { AiOutlineSearch } from "react-icons/ai"
 export default function SearchBox() {
 	return (
 		<div className="flex flex-row-reverse my-4">
-			<div class="form-control">
-				<div class="input-group">
+			<div className="form-control">
+				<div className="input-group">
 					<input
 						type="text"
 						placeholder="Search…"
-						class="input input-bordered"
+						className="input input-bordered"
 					/>
-					<button class="btn btn-secondary btn-square text-xl">
+					<button className="btn btn-secondary btn-square text-xl">
 						<AiOutlineSearch />
 					</button>
 				</div>

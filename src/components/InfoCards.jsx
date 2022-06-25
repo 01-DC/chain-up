@@ -3,67 +3,107 @@ import React from "react"
 export default function InfoCards() {
 	return (
 		<div className="col-span-3 bg-primary rounded-box p-4 flex flex-col gap-4">
-			<div class="card card-side bg-base-100 shadow-xl">
+			<div className="card card-side bg-base-100 shadow-xl">
 				<figure>
 					<img
 						src="https://api.lorem.space/image/album?w=300&h=200"
 						alt="Album"
 					/>
 				</figure>
-				<div class="card-body">
-					<h2 class="card-title">New album is released!</h2>
+				<div className="card-body">
+					<h2 className="card-title font-gold text-2xl">
+						New album is released!
+					</h2>
 					<p>Click the button to listen on Spotiwhy app.</p>
-					<div class="card-actions justify-end">
-						<div class="badge badge-outline">Fashion</div>
-						<div class="badge badge-outline">Products</div>
+					<div className="card-actions">
+						<div className="badge badge-lg badge-primary">
+							Domain:
+						</div>
+						<div className="badge badge-lg badge-primary">
+							Valuation:
+						</div>
+						<div className="badge badge-lg badge-primary">
+							Revenue:
+						</div>
+						<div className="badge badge-lg badge-primary">Age:</div>
 					</div>
 				</div>
 			</div>
-			<div class="card card-side bg-base-100 shadow-xl">
+			<div className="card card-side bg-base-100 shadow-xl">
 				<figure>
 					<img
 						src="https://api.lorem.space/image/album?w=300&h=200"
 						alt="Album"
 					/>
 				</figure>
-				<div class="card-body">
-					<h2 class="card-title">New album is released!</h2>
+				<div className="card-body">
+					<h2 className="card-title font-gold text-2xl">
+						New album is released!
+					</h2>
 					<p>Click the button to listen on Spotiwhy app.</p>
-					<div class="card-actions justify-end">
-						<div class="badge badge-outline">Fashion</div>
-						<div class="badge badge-outline">Products</div>
+					<div className="card-actions">
+						<div className="badge badge-lg badge-primary">
+							Domain:
+						</div>
+						<div className="badge badge-lg badge-primary">
+							Valuation:
+						</div>
+						<div className="badge badge-lg badge-primary">
+							Revenue:
+						</div>
+						<div className="badge badge-lg badge-primary">Age:</div>
 					</div>
 				</div>
 			</div>
-			<div class="card card-side bg-base-100 shadow-xl">
+			<div className="card card-side bg-base-100 shadow-xl">
 				<figure>
 					<img
 						src="https://api.lorem.space/image/album?w=300&h=200"
 						alt="Album"
 					/>
 				</figure>
-				<div class="card-body">
-					<h2 class="card-title">New album is released!</h2>
+				<div className="card-body">
+					<h2 className="card-title font-gold text-2xl">
+						New album is released!
+					</h2>
 					<p>Click the button to listen on Spotiwhy app.</p>
-					<div class="card-actions justify-end">
-						<div class="badge badge-outline">Fashion</div>
-						<div class="badge badge-outline">Products</div>
+					<div className="card-actions">
+						<div className="badge badge-lg badge-primary">
+							Domain:
+						</div>
+						<div className="badge badge-lg badge-primary">
+							Valuation:
+						</div>
+						<div className="badge badge-lg badge-primary">
+							Revenue:
+						</div>
+						<div className="badge badge-lg badge-primary">Age:</div>
 					</div>
 				</div>
 			</div>
-			<div class="card card-side bg-base-100 shadow-xl">
+			<div className="card card-side bg-base-100 shadow-xl">
 				<figure>
 					<img
 						src="https://api.lorem.space/image/album?w=300&h=200"
 						alt="Album"
 					/>
 				</figure>
-				<div class="card-body">
-					<h2 class="card-title">New album is released!</h2>
+				<div className="card-body">
+					<h2 className="card-title font-gold text-2xl">
+						New album is released!
+					</h2>
 					<p>Click the button to listen on Spotiwhy app.</p>
-					<div class="card-actions justify-end">
-						<div class="badge badge-outline">Fashion</div>
-						<div class="badge badge-outline">Products</div>
+					<div className="card-actions">
+						<div className="badge badge-lg badge-primary">
+							Domain:
+						</div>
+						<div className="badge badge-lg badge-primary">
+							Valuation:
+						</div>
+						<div className="badge badge-lg badge-primary">
+							Revenue:
+						</div>
+						<div className="badge badge-lg badge-primary">Age:</div>
 					</div>
 				</div>
 			</div>

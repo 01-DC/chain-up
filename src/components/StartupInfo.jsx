@@ -6,9 +6,9 @@ export default function StartupInfo() {
 			<div className="grid grid-cols-2 gap-4">
 				<div></div>
 
-				<div class="card bg-primary text-primary-content">
-					<div class="card-body">
-						<h2 class="card-title">Polygon</h2>
+				<div className="card bg-primary text-primary-content">
+					<div className="card-body">
+						<h2 className="card-title">Polygon</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing
 							elit. Laborum ratione quas facilis accusamus ab
@@ -61,9 +61,7 @@ export default function StartupInfo() {
 					</div>
 				</div>
 			</div>
-            <div className="my-4">
-
-            </div>
+			<div className="my-4"></div>
 		</div>
 	)
 }
