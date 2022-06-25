@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 html,
 body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	font-family: "Montserrat", sans-serif;
 }
 
 @tailwind base;
