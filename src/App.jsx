@@ -1,7 +1,13 @@
 import React from "react"
 import { Routes, Route } from "react-router-dom"
 
-import { Navbar, Filters, InfoCards, SearchBox, StartupInfo } from "./components"
+import {
+	Navbar,
+	Filters,
+	InfoCards,
+	SearchBox,
+	StartupInfo,
+} from "./components"
 
 function App() {
 	return (
@@ -14,18 +20,14 @@ function App() {
 						element={
 							<>
 								<SearchBox />
-								<div className="grid grid-cols-4 gap-4">
-									<div className="flex flex-col gap-4">
-										<Filters />
-									</div>
-									<div className="col-span-3">
-										<InfoCards />
-									</div>
+								<div className="lg:grid lg:grid-cols-4 gap-4">
+									<Filters />
+									<InfoCards />
 								</div>
 							</>
 						}
 					/>
-          <Route path="/polygon" element={<StartupInfo />}/>
+					<Route path="/polygon" element={<StartupInfo />} />
 				</Routes>
 			</div>
 		</div>
