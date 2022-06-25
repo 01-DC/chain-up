@@ -27,7 +27,7 @@ function App() {
 							</>
 						}
 					/>
-					<Route path="/polygon" element={<StartupInfo />} />
+					<Route path="/details" element={<StartupInfo />} />
 				</Routes>
 			</div>
 		</div>
