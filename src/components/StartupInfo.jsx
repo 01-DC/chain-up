@@ -1,14 +1,21 @@
 import React from "react"
+import ReactPlayer from "react-player"
 
 export default function StartupInfo() {
 	return (
 		<div>
-			<div className="grid grid-cols-2 gap-4">
-				<div></div>
+			<div className="grid grid-flow-row lg:grid-cols-2 gap-4">
+				<div className="aspect-video">
+					<ReactPlayer
+						url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+						width="100%"
+						height="100%"
+					/>
+				</div>
 
 				<div className="card bg-primary text-primary-content">
 					<div className="card-body">
-						<h2 className="card-title font-gold text-2xl">
+						<h2 className="card-title font-gold text-3xl font-bold">
 							Polygon
 						</h2>
 						<p>
@@ -44,9 +51,12 @@ export default function StartupInfo() {
 				</div>
 				<div className="p-4 rounded-full bg-accent text-white">Age</div>
 			</div>
-			<div className="my-4 bg-white rounded-box p-4 ">
-				<div>
-					<ol className="list-decimal list-inside font-bold text-lg mb-4">
+			<div className="my-4 bg-white rounded-box p-4 flex gap-4">
+				<div className="basis-1/2">
+					<h3 className="font-gold text-2xl text-center font-bold underline mb-2">
+						Subscription Perks
+					</h3>
+					<ol className="list-decimal list-inside font-medium text-lg mb-4">
 						<li>Exclusive updates directly from the founders.</li>
 						<li>Access to monthly financial reports</li>
 						<li>
@@ -59,7 +69,24 @@ export default function StartupInfo() {
 						<li>Exclusive Polygon NFT Giveaways</li>
 					</ol>
 				</div>
-				<button class="btn btn-block btn-secondary">Wide</button>
+				<div className="basis-1/2 bg-secondary card card-compact shadow-xl text-white">
+					<figure>
+						<img src="" alt="Shoes" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="card-title">Subsribe Now!</h2>
+						<p>
+							Subscribe to this startup and avail all the
+							mentioned perks all the while supporting in it's
+							growth and making an investment.
+						</p>
+						<div class="card-actions mt-2">
+							<button class="btn btn-wide btn-primary">
+								Subscribe!
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	)

@@ -15,12 +15,14 @@ export default function Navbar() {
 					</Link>
 				</div>
 				<div className="flex-none">
-					<button className="btn btn-secondary text-base">
-						<AiOutlinePlus
-							style={{ fontSize: "20px", marginRight: "8px" }}
-						/>{" "}
-						Add Your Startup
-					</button>
+					<Link to="/new">
+						<button className="btn btn-secondary text-base">
+							<AiOutlinePlus
+								style={{ fontSize: "20px", marginRight: "8px" }}
+							/>{" "}
+							Add Your Startup
+						</button>
+					</Link>
 				</div>
 			</div>
 		</div>
