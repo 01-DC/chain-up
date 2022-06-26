@@ -7,8 +7,9 @@ import {
 	InfoCards,
 	SearchBox,
 	StartupInfo,
-  AddNewStartup,
-  NotFound
+	AddNewStartup,
+	NotFound,
+	Footer,
 } from "./components"
 
 function App() {
@@ -30,10 +31,11 @@ function App() {
 						}
 					/>
 					<Route path="/details" element={<StartupInfo />} />
-          <Route path="/new" element={<AddNewStartup />} />
-          <Route path="*" element={<NotFound />} />
+					<Route path="/new" element={<AddNewStartup />} />
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</div>
+			<Footer />
 		</div>
 	)
 }
