@@ -45,7 +45,10 @@ const TodoSchema = new Schema({
 	},
 	perksList: {
 		type: String,
-		required: [true, "cryptoAddress field is required"],
+		required: [
+			true,
+			"perksList field is required each separated by commas",
+		],
 	},
 })
 

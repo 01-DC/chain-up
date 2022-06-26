@@ -1,6 +1,7 @@
 import React from "react"
 import ReactPlayer from "react-player"
 import { useStateContext } from "../contexts/ContextProvider"
+import { SubscribeForm } from "."
 
 export default function StartupInfo() {
 	const { selectedItem } = useStateContext()
@@ -69,9 +70,26 @@ export default function StartupInfo() {
 							growth and making an investment.
 						</p>
 						<div className="card-actions mt-2">
-							<button className="btn btn-wide btn-primary">
+							<label
+								for="my-modal-3"
+								class="btn modal-button btn-primary">
 								Subscribe!
-							</button>
+							</label>
+						</div>
+						<input
+							type="checkbox"
+							id="my-modal-3"
+							class="modal-toggle"
+						/>
+						<div class="modal">
+							<div class="modal-box relative">
+								<label
+									for="my-modal-3"
+									class="btn btn-sm btn-circle absolute right-2 top-2">
+									✕
+								</label>
+								<SubscribeForm />
+							</div>
 						</div>
 					</div>
 				</div>
