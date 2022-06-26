@@ -4,7 +4,7 @@ const Todo = require('../models/todo');
 
 router.get('/todos', (req, res, next) => {
   // This will return all the data, exposing only the id and action field to the client
-  Todo.find({}, 'name', 'details', 'domain', 'valuation', 'revenue', 'age', 'companyLogo', 'pitchVideo')
+  Todo.find({}, {})
     .then((data) => res.json(data))
     .catch(next);
 });
