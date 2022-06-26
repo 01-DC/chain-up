@@ -12,7 +12,7 @@ export default function SubscribeForm() {
 				<input
 					type="text"
 					placeholder="Name"
-					class="input input-bordered w-full max-w-md"
+					className="input input-bordered w-full max-w-md"
 				/>
 			</div>
 			<div className="form-control">
@@ -22,7 +22,7 @@ export default function SubscribeForm() {
 				<input
 					type="text"
 					placeholder="Description"
-					class="input input-bordered w-full max-w-md"
+					className="input input-bordered w-full max-w-md"
 				/>
 			</div>
 			<div className="form-control">
@@ -32,7 +32,7 @@ export default function SubscribeForm() {
 				<input
 					type="number"
 					placeholder="Amount"
-					class="input input-bordered w-full max-w-md"
+					className="input input-bordered w-full max-w-md"
 				/>
 			</div>
 			<div className="form-control mt-6">

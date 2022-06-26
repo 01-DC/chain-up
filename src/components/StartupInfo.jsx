@@ -72,20 +72,20 @@ export default function StartupInfo() {
 						<div className="card-actions mt-2">
 							<label
 								for="my-modal-3"
-								class="btn modal-button btn-primary">
+								className="btn modal-button btn-primary">
 								Subscribe!
 							</label>
 						</div>
 						<input
 							type="checkbox"
 							id="my-modal-3"
-							class="modal-toggle"
+							className="modal-toggle"
 						/>
-						<div class="modal">
-							<div class="modal-box relative">
+						<div className="modal">
+							<div className="modal-box relative">
 								<label
 									for="my-modal-3"
-									class="btn btn-sm btn-circle absolute right-2 top-2">
+									className="btn btn-sm btn-circle absolute right-2 top-2">
 									✕
 								</label>
 								<SubscribeForm />

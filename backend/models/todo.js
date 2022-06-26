@@ -7,14 +7,6 @@ const TodoSchema = new Schema({
 		type: String,
 		required: [true, "The name text field is required"],
 	},
-	details: {
-		type: String,
-		required: [true, "The details text field is required"],
-	},
-	description: {
-		type: String,
-		required: [true, "The description text field is required"],
-	},
 	domain: {
 		type: String,
 		required: [true, "The domain text field is required"],
@@ -31,17 +23,13 @@ const TodoSchema = new Schema({
 		type: String,
 		required: [true, "The age text field is required"],
 	},
-	companyLogo: {
+	details: {
 		type: String,
-		required: [true, "The companyLogo text field is required"],
+		required: [true, "The details text field is required"],
 	},
-	pitchVideo: {
+	description: {
 		type: String,
-		required: [true, "The pitchVideo text field is required"],
-	},
-	cryptoAddress: {
-		type: String,
-		required: [true, "cryptoAddress field is required"],
+		required: [true, "The description text field is required"],
 	},
 	perksList: {
 		type: String,
@@ -49,6 +37,18 @@ const TodoSchema = new Schema({
 			true,
 			"perksList field is required each separated by commas",
 		],
+	},
+	cryptoAddress: {
+		type: String,
+		required: [true, "cryptoAddress field is required"],
+	},
+	companyLogo: {
+		type: String,
+		required: [true, "The companyLogo text field is required"],
+	},
+	pitchVideo: {
+		type: String,
+		required: [true, "The pitchVideo text field is required"],
 	},
 })
 

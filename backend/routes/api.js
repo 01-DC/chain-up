@@ -10,7 +10,7 @@ router.get('/todos', (req, res, next) => {
 });
 
 router.post('/todos', (req, res, next) => {
-  if (req.body.name && req.body.details && req.body.domain && req.body.valuation && req.body.revenue && req.body.age && req.body.companyLogo && req.body.pitchVideo) {
+  if (true) {
     Todo.create(req.body)
       .then((data) => res.json(data))
       .catch(next);
