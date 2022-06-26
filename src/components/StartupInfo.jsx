@@ -11,7 +11,7 @@ export default function StartupInfo() {
 			<div className="grid grid-flow-row lg:grid-cols-2 gap-4">
 				<div className="aspect-video">
 					<ReactPlayer
-						url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+						url={selectedItem.pitchVideo}
 						width="100%"
 						height="100%"
 					/>
@@ -23,6 +23,7 @@ export default function StartupInfo() {
 							{selectedItem.name}
 						</h2>
 						<p>{selectedItem.details}</p>
+						<p>{selectedItem.description}</p>
 					</div>
 				</div>
 			</div>
@@ -46,24 +47,23 @@ export default function StartupInfo() {
 						Subscription Perks
 					</h3>
 					<ol className="list-decimal list-inside font-medium text-lg mb-4">
-						<li>Exclusive updates directly from the founders.</li>
-						<li>Access to monthly financial reports</li>
-						<li>
-							Access to join exclusive live sessions and events
-						</li>
-						<li>
-							Access to interact with the community of Polygon
-							supporters
-						</li>
-						<li>Exclusive Polygon NFT Giveaways</li>
+						{selectedItem.perksList
+							.split(",")
+							.map((item, index) => {
+								return <li key={index}>{item.trim()}</li>
+							})}
 					</ol>
 				</div>
 				<div className="basis-1/2 bg-secondary card card-compact shadow-xl text-white">
 					<figure>
-						<img src="" alt="Shoes" />
+						<img
+							className=""
+							src={selectedItem.companyLogo}
+							alt="Logo"
+						/>
 					</figure>
 					<div className="card-body items-center text-center">
-						<h2 className="card-title">Subsribe Now!</h2>
+						<h2 className="card-title">Subscribe Now!</h2>
 						<p>
 							Subscribe to this startup and avail all the
 							mentioned perks all the while supporting in it's

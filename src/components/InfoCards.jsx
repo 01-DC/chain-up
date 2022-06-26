@@ -13,9 +13,15 @@ export default function InfoCards() {
 			{data.map((item) => {
 				return (
 					<Link to="/details" key={item._id}>
-						<div className="card card-side bg-base-100 shadow-xl" onClick={() => handleClick(item)}>
-							<figure>
-								<img src={item.companyLogo} alt="Album" />
+						<div
+							className="card card-side bg-base-100 shadow-xl"
+							onClick={() => handleClick(item)}>
+							<figure className="bg-white">
+								<img
+									className="h-64 w-64"
+									src={item.companyLogo}
+									alt="Logo"
+								/>
 							</figure>
 							<div className="card-body">
 								<h2 className="card-title font-gold text-2xl">
@@ -27,10 +33,10 @@ export default function InfoCards() {
 										Domain: {item.domain}
 									</div>
 									<div className="badge badge-lg badge-primary">
-										Valuation: {item.valuation}
+										Valuation: ${item.valuation}
 									</div>
 									<div className="badge badge-lg badge-primary">
-										Revenue: {item.revenue}
+										Revenue: ${item.revenue}
 									</div>
 									<div className="badge badge-lg badge-primary">
 										Age: {item.age}

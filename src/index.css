@@ -9,6 +9,16 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
+::-webkit-scrollbar {
+	height: 6px;
+	width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #7d919b;
+	border-radius: 999px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
