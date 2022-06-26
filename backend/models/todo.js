@@ -43,6 +43,10 @@ const TodoSchema = new Schema({
 		type: String,
 		required: [true, "cryptoAddress field is required"],
 	},
+	perksList: {
+		type: String,
+		required: [true, "cryptoAddress field is required"],
+	},
 })
 
 // Create model for todo
