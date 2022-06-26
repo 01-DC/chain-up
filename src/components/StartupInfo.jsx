@@ -1,7 +1,10 @@
 import React from "react"
 import ReactPlayer from "react-player"
+import { useStateContext } from "../contexts/ContextProvider"
 
 export default function StartupInfo() {
+	const { data } = useStateContext()
+	
 	return (
 		<div>
 			<div className="grid grid-flow-row lg:grid-cols-2 gap-4">
@@ -73,15 +76,15 @@ export default function StartupInfo() {
 					<figure>
 						<img src="" alt="Shoes" />
 					</figure>
-					<div class="card-body items-center text-center">
-						<h2 class="card-title">Subsribe Now!</h2>
+					<div className="card-body items-center text-center">
+						<h2 className="card-title">Subsribe Now!</h2>
 						<p>
 							Subscribe to this startup and avail all the
 							mentioned perks all the while supporting in it's
 							growth and making an investment.
 						</p>
-						<div class="card-actions mt-2">
-							<button class="btn btn-wide btn-primary">
+						<div className="card-actions mt-2">
+							<button className="btn btn-wide btn-primary">
 								Subscribe!
 							</button>
 						</div>

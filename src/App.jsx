@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Routes, Route } from "react-router-dom"
 
+import { useStateContext } from "./contexts/ContextProvider"
 import {
 	Navbar,
 	Filters,
@@ -13,6 +14,23 @@ import {
 } from "./components"
 
 function App() {
+	const { setData } = useStateContext()
+
+	async function getAllData() {
+		let url = "http://localhost:5000/api/todos"
+
+		let response = await fetch(url, {
+			mode: "cors",
+		})
+		let data = await response.json()
+		setData(data)
+		console.log(data)
+	}
+
+	useEffect(() => {
+		getAllData()
+	}, [])
+
 	return (
 		<div className="">
 			<Navbar />
