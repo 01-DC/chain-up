@@ -3,8 +3,35 @@ import React from "react"
 export default function AddNewStartup() {
 	return (
 		<div class="w-full">
-			<div class="border border-black rounded-box bg-primary p-4">
+			<div class="rounded-box bg-primary p-4 mt-4">
 				<form action="">
+					<div class="form-control">
+						<label class="label">
+							<span class="label-text text-white">
+								Name of your startup
+							</span>
+						</label>
+						<input
+							type="text"
+							placeholder="Name"
+							class="input input-bordered"
+							maxLength={200}
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label class="label">
+							<span class="label-text text-white">
+								URL of Logo image
+							</span>
+						</label>
+						<input
+							type="text"
+							placeholder="Logo URL"
+							class="input input-bordered"
+							required
+						/>
+					</div>
 					<div class="form-control">
 						<label class="label">
 							<span class="label-text text-white">
@@ -15,7 +42,7 @@ export default function AddNewStartup() {
 							type="text"
 							placeholder="Short Description"
 							class="input input-bordered"
-							maxLength={200}
+							maxLength={250}
 							required
 						/>
 					</div>
@@ -32,6 +59,21 @@ export default function AddNewStartup() {
 							placeholder="Long Description"
 							required></textarea>
 					</div>
+
+					<div class="form-control">
+						<label class="label">
+							<span class="label-text text-white">
+								Enter address of crypto wallet
+							</span>
+						</label>
+						<input
+							type="text"
+							placeholder="Wallet address"
+							class="input input-bordered"
+							required
+						/>
+					</div>
+
 					<div class="form-control">
 						<label class="label">
 							<span class="label-text text-white">
