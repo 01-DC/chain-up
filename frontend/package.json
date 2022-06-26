@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "start":"node src/main.js",
+    "start":"node src/main.jsx",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
