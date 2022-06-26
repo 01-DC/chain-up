@@ -12,19 +12,20 @@ module.exports = {
 	daisyui: {
 		themes: [
 			{
-				mytheme: {
-					primary: "#5E50E2",
-					secondary: "#c026d3",
-					accent: "#F471B5",
-					neutral: "#3ABFF8",
-					"base-100": "#D5CFFF",
-					info: "#0CA6E9",
-					success: "#2BD4BD",
-					warning: "#F4C152",
-					error: "#FB6F84",
-					"primary-content": "#ffffff",
-					"secondary-content": "#ffffff",
-					"neutral-content": "#ffffff",
+				business: {
+					...require("daisyui/src/colors/themes")[
+						"[data-theme=business]"
+					],
+					"--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
+					"--rounded-btn": "0.5rem", // border radius rounded-btn utility class, used in buttons and similar element
+					"--rounded-badge": "1.9rem", // border radius rounded-badge utility class, used in badges and similar
+					"--animation-btn": "0.25s", // duration of animation when you click on button
+					"--animation-input": "0.2s", // duration of animation for inputs like checkbox, toggle, radio, etc
+					"--btn-text-case": "uppercase", // set default text transform for buttons
+					"--btn-focus-scale": "0.95", // scale transform of button when you focus on it
+					"--border-btn": "1px", // border width of buttons
+					"--tab-border": "1px", // border width of tabs
+					"--tab-radius": "0.5rem", // border radius of tabs
 				},
 			},
 		],

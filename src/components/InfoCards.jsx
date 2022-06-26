@@ -3,14 +3,17 @@ import { Link } from "react-router-dom"
 import { useStateContext } from "../contexts/ContextProvider"
 
 export default function InfoCards() {
-	const { data } = useStateContext()
+	const { data, setSelectedItem } = useStateContext()
 
+	function handleClick(item) {
+		setSelectedItem(item)
+	}
 	return (
 		<div className="col-span-3 bg-primary rounded-box p-4 flex flex-col gap-4">
 			{data.map((item) => {
 				return (
-					<Link to="/details" key={item.id}>
-						<div className="card card-side bg-base-100 shadow-xl">
+					<Link to="/details" key={item._id}>
+						<div className="card card-side bg-base-100 shadow-xl" onClick={() => handleClick(item)}>
 							<figure>
 								<img src={item.companyLogo} alt="Album" />
 							</figure>

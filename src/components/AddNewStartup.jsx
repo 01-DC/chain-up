@@ -1,10 +1,31 @@
 import React from "react"
 
 export default function AddNewStartup() {
+	const handleSubmit = async (e) => {
+		e.preventDefault()
+		try {
+			let res = await fetch("http://localhost:5000/api/todos", {
+				method: "POST",
+				body: JSON.stringify({
+					name: e.target.name.value,
+					details: e.target.details.value,
+				}),
+			})
+			let resJson = await res.json()
+			if (res.status === 200) {
+				setMessage("User created successfully")
+			} else {
+				setMessage("Some error occured")
+			}
+		} catch (err) {
+			console.log(err)
+		}
+	}
+
 	return (
 		<div className="w-full">
 			<div className="rounded-box bg-primary p-4 mt-4">
-				<form action="">
+				<form action={handleSubmit}>
 					<div className="form-control">
 						<label className="label">
 							<span className="label-text text-white">
@@ -14,6 +35,7 @@ export default function AddNewStartup() {
 						<input
 							type="text"
 							placeholder="Name"
+							name="name"
 							className="input input-bordered"
 							maxLength={200}
 							required
@@ -28,6 +50,7 @@ export default function AddNewStartup() {
 						<input
 							type="text"
 							placeholder="Logo URL"
+							name="companyLogo"
 							className="input input-bordered"
 							required
 						/>
@@ -42,6 +65,7 @@ export default function AddNewStartup() {
 							type="text"
 							placeholder="Short Description"
 							className="input input-bordered"
+							name="details"
 							maxLength={250}
 							required
 						/>
@@ -57,6 +81,7 @@ export default function AddNewStartup() {
 						<textarea
 							className="textarea textarea-bordered h-24 resize-none"
 							placeholder="Long Description"
+							name="description"
 							required></textarea>
 					</div>
 
@@ -70,6 +95,7 @@ export default function AddNewStartup() {
 							type="text"
 							placeholder="Wallet address"
 							className="input input-bordered"
+							name="cryptoAddress"
 							required
 						/>
 					</div>
@@ -97,6 +123,7 @@ export default function AddNewStartup() {
 							type="text"
 							placeholder="Valid URL (only 1)"
 							className="input input-bordered"
+							name="pitchVideo"
 						/>
 					</div>
 					<div className="form-control mt-6">

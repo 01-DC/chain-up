@@ -3,8 +3,8 @@ import ReactPlayer from "react-player"
 import { useStateContext } from "../contexts/ContextProvider"
 
 export default function StartupInfo() {
-	const { data } = useStateContext()
-	
+	const { selectedItem } = useStateContext()
+
 	return (
 		<div>
 			<div className="grid grid-flow-row lg:grid-cols-2 gap-4">
@@ -19,42 +19,27 @@ export default function StartupInfo() {
 				<div className="card bg-primary text-primary-content">
 					<div className="card-body">
 						<h2 className="card-title font-gold text-3xl font-bold">
-							Polygon
+							{selectedItem.name}
 						</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing
-							elit. Excepturi dolorem exercitationem beatae, earum
-							iure cupiditate praesentium mollitia et omnis
-							delectus nemo numquam maiores optio facilis
-							temporibus quam aliquid necessitatibus quibusdam
-							veritatis porro quia, reprehenderit expedita?
-							Dolorum consequatur voluptate facere repudiandae
-							rerum sit laboriosam repellat sint adipisci tempora,
-							incidunt ducimus quo laudantium. Debitis provident
-							dolorem, consequuntur architecto rerum quia tempora
-							quasi magni reprehenderit ea, nihil voluptate neque
-							quibusdam ad? Eaque, soluta sunt ad voluptate natus
-							provident fugiat quam eveniet magni ex nulla
-							sapiente placeat autem, suscipit perspiciatis! Modi
-							enim sit nesciunt magni deserunt voluptates atque
-							aliquid, impedit fuga. Fugiat, totam accusantium!
-						</p>
+						<p>{selectedItem.details}</p>
 					</div>
 				</div>
 			</div>
 			<div className="bg-neutral p-4 my-4 rounded-box flex justify-evenly">
 				<div className="p-4 rounded-full bg-accent text-white">
-					Domain
+					Domain: {selectedItem.domain}
 				</div>
 				<div className="p-4 rounded-full bg-accent text-white">
-					Valuation
+					Valuation: {selectedItem.valuation}
 				</div>
 				<div className="p-4 rounded-full bg-accent text-white">
-					Revenue
+					Revenue: {selectedItem.revenue}
 				</div>
-				<div className="p-4 rounded-full bg-accent text-white">Age</div>
+				<div className="p-4 rounded-full bg-accent text-white">
+					Age: {selectedItem.age}
+				</div>
 			</div>
-			<div className="my-4 bg-white rounded-box p-4 flex gap-4">
+			<div className="my-4 bg-black rounded-box py-4 px-5 flex gap-4">
 				<div className="basis-1/2">
 					<h3 className="font-gold text-2xl text-center font-bold underline mb-2">
 						Subscription Perks
