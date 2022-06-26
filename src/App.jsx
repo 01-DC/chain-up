@@ -9,7 +9,7 @@ import {
 	StartupInfo,
   AddNewStartup,
   NotFound
-} from "./src/components"
+} from "./components"
 
 function App() {
 	return (
