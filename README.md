@@ -4,6 +4,9 @@
 <b>Invest in your favorite startup to be a part of their journey and community</b>
 </p>
 
+## Project Overview
+https://devpost.com/software/startup-chain
+
 ## Demo video
 https://www.youtube.com/watch?v=BuHZGN3AcFs
 
